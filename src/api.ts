@@ -1,7 +1,7 @@
 import axios from "axios";
 import { tasksType } from "./types";
 
-const API_URL = "http://localhost:8000/api/tasks";
+const API_URL = "https://task-management-backend-bhff.onrender.com/api/tasks";
 
 // Get all tasks
 export const getTasks = async () => axios.get(API_URL);
