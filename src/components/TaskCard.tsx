@@ -1,5 +1,10 @@
 import { Card, Text, Button, Group } from "@mantine/core";
-import { tasksType } from "../types";
+import {
+  onCompleteType,
+  onDeleteType,
+  onUpdateType,
+  tasksType,
+} from "../types";
 
 const TaskCard = ({
   tasks,
@@ -9,10 +14,10 @@ const TaskCard = ({
   onDelete,
 }: {
   tasks: tasksType;
-  onComplete: any;
+  onComplete: onCompleteType;
   isComplete: boolean;
-  onUpdate: any;
-  onDelete: any;
+  onUpdate: onUpdateType;
+  onDelete: onDeleteType;
 }) => {
   return (
     <Card p="lg" mb={"sm"} w={"full"} withBorder key={tasks._id}>

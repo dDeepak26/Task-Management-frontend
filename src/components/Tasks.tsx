@@ -122,7 +122,7 @@ const Tasks = () => {
             key={tasks._id}
             tasks={tasks}
             onComplete={() => handleMarkComplete(tasks._id || "")}
-            isComplete={tasks.completed}
+            isComplete={tasks.completed ?? false}
             onUpdate={() => handleUpdate(tasks._id || "")}
             onDelete={() => handleDelete(tasks._id || "")}
           />

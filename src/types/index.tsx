@@ -4,3 +4,7 @@ export type tasksType = {
   description?: string;
   completed?: boolean;
 };
+
+export type onUpdateType = () => void;
+export type onCompleteType = () => void;
+export type onDeleteType = () => void;
